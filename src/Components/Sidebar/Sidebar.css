@@ -1,0 +1,20 @@
+.deliveryOption{
+    display: flex;
+    gap: 1rem;
+}
+.priceInputWrapper{
+    display: flex;
+    gap: 12px;
+}
+.priceInputbox{
+    width: 69px;
+    padding-left: 12px;
+
+}
+.sidebarAppcontainer{
+    padding-left: 22px;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

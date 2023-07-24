@@ -1,0 +1,28 @@
+.cardContainer{
+    height: 290px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px ;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.imgWrappper{
+    height: 188px;
+    width: 188px;
+}
+
+.productImg{
+    height: 100%;
+    width: 100%;
+}
+
+.priceRs{
+    color: orangered;
+}
+.cartButton{
+    margin: 10px 0 ;
+    background-color: #eeeeee;
+}

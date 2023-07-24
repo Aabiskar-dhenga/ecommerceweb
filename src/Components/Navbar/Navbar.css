@@ -1,0 +1,66 @@
+.inputWrapper{
+    background-color: white;
+    color: black;
+    height: 44px;
+    width: 325px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    gap: 10px;
+
+    align-items: center;
+}
+.inputBox{
+    height: 100%;
+    width: 100%;
+    padding-left: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.navContainer{
+
+    height: 100%;
+    width: 100vw;
+    background-color:rgb(19,25,33);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchBtn{
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(255,164,28);
+    outline: none;
+    border: none;
+}
+.signWrapper{
+    display: flex;
+    gap: 15px;
+    padding-right: 3rem;
+}
+.navAppContainer{
+    height: 100px;
+    width: 100vw;
+    background-color: blueviolet;}
+
+    .logo{
+        height: 35px;
+        width: 120px;
+    }
+    .shoppingCart{
+        outline: none;
+    }
+    .signInbtn{
+       color: rgb(255,164,28);
+    outline: none;
+       border: none;
+    
+
+    }
+
+    .cartImg{
+        color: rgb(255,164,28);
+        height: 20px;
+        width: 50px;
+    }
