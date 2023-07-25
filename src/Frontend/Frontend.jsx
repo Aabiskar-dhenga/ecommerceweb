@@ -8,8 +8,6 @@ import Sidebar from "../Components/Sidebar/Sidebar";
 const Frontend = () => {
   const [cartItem, setCartItem] = useState([]);
 
-  console.log(cartItem);
-
   return (
     <div>
       <Navbar cartItem={cartItem} />

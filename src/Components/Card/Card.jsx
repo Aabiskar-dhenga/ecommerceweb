@@ -14,7 +14,7 @@ const Card = ({ data, setCartItem }) => {
       </div>
       <div>
         <h3> {data.Name}</h3>
-        <p className="priceRs">{data.price}</p>
+        <p className="priceRs">Rs {data.price}</p>
       </div>
       <button className="cartButton" onClick={handleAddCart}>
         Add to cart

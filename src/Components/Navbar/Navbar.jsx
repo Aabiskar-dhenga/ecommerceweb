@@ -8,11 +8,13 @@ const Navbar = ({ cartItem }) => {
   return (
     <div className="navAppContainer">
       <div className="navContainer">
-        <img
-          src="https://icms-image.slatic.net/images/ims-web/458d4688-ae26-4e6d-8f39-c26194de228a.png"
-          alt=""
-          className="logo"
-        />
+        <Link to={"/"}>
+          <img
+            src="https://icms-image.slatic.net/images/ims-web/458d4688-ae26-4e6d-8f39-c26194de228a.png"
+            alt=""
+            className="logo"
+          />
+        </Link>
         <div className="inputWrapper">
           <input
             type="text"

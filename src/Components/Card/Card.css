@@ -1,7 +1,7 @@
 .cardContainer{
     height: 290px;
     width: 250px;
-    background-color: rgba(255, 255, 255, 0.568);
+    background-color: rgba(119, 116, 116, 0.39);
     border-radius: 22px;
     display: flex;
     flex-direction: column;
@@ -11,12 +11,13 @@
 }
 .imgWrappper{
     height: 188px;
-    width: 188px;
+    width: 100%;
 }
 
 .productImg{
     height: 100%;
     width: 100%;
+    border-radius: 12px;
 }
 
 .priceRs{

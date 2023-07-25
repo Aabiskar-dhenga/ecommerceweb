@@ -4,3 +4,16 @@
     flex-wrap: wrap;
 }
 
+.cartContainer{
+    background-color: rgb(207, 223, 223);
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.cartBodyContent{
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+}

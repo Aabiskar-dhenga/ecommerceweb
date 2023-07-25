@@ -14,9 +14,6 @@ function App() {
 
   return (
     <div className="appContainer">
-      {/* <Card /> */}
-
-      {/* <Frontend /> */}
       <BrowserRouter>
         <Routes>
           <Route path="" element={<Home />} />
