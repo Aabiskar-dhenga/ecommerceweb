@@ -4,12 +4,12 @@ import Card from "../../Components/Card/Card";
 import "../cart/Cart.css";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import Navbar from "../../Components/Navbar/Navbar";
+import Cartcard from "../../Components/Cartcard/Cartcard";
 
-const Cart = (cartItem) => {
+const Cart = ({ cartItem }) => {
   const location = useLocation();
   const { state } = location;
 
-  console.log(state.data);
   return (
     <div className="cartContainer">
       <Navbar cartItem={cartItem} />
@@ -17,12 +17,9 @@ const Cart = (cartItem) => {
       <div className="cartBodyContent">
         <div className="cartWrapper">
           {state?.data?.map((cart) => (
-            <Card data={cart} />
+            <Cartcard  data={cart}/>
           ))}
         </div>
-        {/* navbar */}
-        {/* header  your all carts  */}
-        {/*  */}
       </div>
     </div>
   );

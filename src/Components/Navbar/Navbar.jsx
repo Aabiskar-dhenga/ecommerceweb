@@ -25,10 +25,10 @@ const Navbar = ({ cartItem }) => {
             <ImSearch className="searchImgbtn" />
           </button>
         </div>
-        <Link to={"/cart"} state={{ data: cartItem }}>
+        <Link to="/cart" state={{data:cartItem}}>
           <button className="shoppingCart">
             <MdShoppingCart className="cartImg" />
-            {cartItem.length}
+            {cartItem?.length}
           </button>
         </Link>
         <div className="signWrapper">

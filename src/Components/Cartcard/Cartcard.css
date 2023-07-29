@@ -1,0 +1,44 @@
+.cartcardContainer{
+    height: 200px;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    background-color: purple;
+    color: #fff6e5;
+}
+
+.carditemLeft{
+    height: 90%;
+    width: 60%;
+    background-color: rgb(193,152,253);
+    display: flex;
+}
+
+.addedProduct{
+    height: 80px;
+    width: 82px;
+    object-fit: cover;
+}
+.cardIcons{
+    display: flex;
+align-items: center; 
+}
+.Itemsbtns{
+    display: flex;
+    gap: 1rem;
+}
+.carditemRight{
+    height: 90%;
+    width: 40%; 
+    display: flex;
+    gap: 3rem;
+    background-color: brown;
+}
+.DeleteIcon{
+    height: 22px;
+    width: 23px;
+}
+.incrementBtn , .decrementBtn{
+    height: 40px;
+    width: 60px;
+}
