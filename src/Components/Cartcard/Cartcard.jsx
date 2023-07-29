@@ -13,7 +13,7 @@ const Cartcard = ({ data }) => {
         <p>{data.Name}</p>
       </div>
       <div className="carditemRight">
-        <div>
+        <div className="itemPrice">
           <p> Rs. {data.price}</p>
           <div className="cardIcons">
             {/* icon bookmark */}

@@ -1,17 +1,27 @@
 .cartcardContainer{
-    height: 200px;
-    width: 60vw;
     display: flex;
+    width: 60vw;
+    height: 180px;
     align-items: center;
-    background-color: purple;
+    background-color: rgb(19,25,33);
     color: #fff6e5;
+    margin-left: 2rem;
+    box-sizing: border-box;
+    
+    overflow: hidden;
+    border-radius: 12px;
 }
+
 
 .carditemLeft{
     height: 90%;
     width: 60%;
-    background-color: rgb(193,152,253);
+    background-color: rgb(19,25,33);
+
     display: flex;
+    gap: 2rem;
+    padding: 0 23px;
+    align-items: center;
 }
 
 .addedProduct{
@@ -21,6 +31,7 @@
 }
 .cardIcons{
     display: flex;
+    gap: 1rem;
 align-items: center; 
 }
 .Itemsbtns{
@@ -31,14 +42,28 @@ align-items: center;
     height: 90%;
     width: 40%; 
     display: flex;
+    align-items: center;
     gap: 3rem;
-    background-color: brown;
+    background-color: rgb(19,25,33);
 }
-.DeleteIcon{
-    height: 22px;
-    width: 23px;
+.DeleteIcon {
+    height: 42px;
+    width: 43px;
+}
+.BookmarkIcon{
+    height: 29px;
+    width: 29px;
 }
 .incrementBtn , .decrementBtn{
     height: 40px;
     width: 60px;
+}
+.itemPrice{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.Itemsbtns{
+    width: 50%;
 }
