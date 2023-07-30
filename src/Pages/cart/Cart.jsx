@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import Card from "../../Components/Card/Card";
 import "../cart/Cart.css";
@@ -9,6 +9,7 @@ import Cartcard from "../../Components/Cartcard/Cartcard";
 const Cart = ({ cartItem }) => {
   const location = useLocation();
   const { state } = location;
+  let [cartData, setCartdata] = useState(state?.data);
 
   return (
     <div className="cartContainer">
@@ -16,8 +17,12 @@ const Cart = ({ cartItem }) => {
 
       <div className="cartBodyContent">
         <div className="cartWrapper">
-          {state?.data?.map((cart) => (
-            <Cartcard  data={cart}/>
+          {cartData?.map((cart) => (
+            <Cartcard
+              setCartdata={setCartdata}
+              data={cart}
+              cartData={cartData}
+            />
           ))}
         </div>
       </div>

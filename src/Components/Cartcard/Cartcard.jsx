@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Cartcard.css";
 import { BsFillBookmarkFill } from "react-icons/Bs";
 import { MdDelete } from "react-icons/Md";
 
-const Cartcard = ({ data }) => {
-  console.log(data);
+const Cartcard = ({ data, setCartdata, cartData }) => {
+  let [quantity, setQuantity] = useState(1);
+  let quantityIncreased = () => {
+    setQuantity(quantity + 1);
+  };
+  let quantityDecreased = () => {
+    if (quantity <= 1) return;
+    setQuantity(quantity - 1);
+  };
+
+  // const handleDelete = (id) => {
+  //   let filtered = cartData.filter((card) => card.id !== id);
+  //   setCartdata(filtered);
+  // };
+
+  const handleDelete = (id) => {
+    let x = cartData.filter((cart) => {
+      return cart.id !== id;
+    });
+    setCartdata(x);
+  };
+
   return (
     <div className="cartcardContainer">
       <div className="carditemLeft">
@@ -19,13 +39,22 @@ const Cartcard = ({ data }) => {
             {/* icon bookmark */}
             <BsFillBookmarkFill className="BookmarkIcon" />
             {/* delete icon */}
-            <MdDelete className="DeleteIcon" />
+            <MdDelete
+              onClick={() => {
+                handleDelete(data.id);
+              }}
+              className="DeleteIcon"
+            />
           </div>
         </div>
         <div className="Itemsbtns">
-          <button className="incrementBtn">-</button>
-          <p>1</p>
-          <button className="decrementBtn">+</button>
+          <button onClick={quantityDecreased} className="incrementBtn">
+            -
+          </button>
+          <p>{quantity}</p>
+          <button onClick={quantityIncreased} className="decrementBtn">
+            +
+          </button>
         </div>
       </div>
     </div>
