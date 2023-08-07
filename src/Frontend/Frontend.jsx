@@ -4,6 +4,7 @@ import Card from "../Components/Card/Card";
 import "../Frontend/Frontend.css";
 import { products } from "../Utilis/Data";
 import Sidebar from "../Components/Sidebar/Sidebar";
+import Footer from "../Components/Footer/Footer";
 
 const Frontend = () => {
   const [cartItem, setCartItem] = useState([]);
@@ -19,6 +20,7 @@ const Frontend = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
