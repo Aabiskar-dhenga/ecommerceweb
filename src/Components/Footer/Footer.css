@@ -48,8 +48,11 @@
 .messageusInputBox{
     padding-left: 12px;
     height: 47px;
+    border: none;
+    outline: none;
+
     border-radius: 12px;
-    width: 422px;
+    width: 300px;
 }
 .foot2{
     display: flex;
@@ -71,7 +74,14 @@
 .sendMessageBtn{
     background-color: black;
     color: whitesmoke;
-    height: 54px;
+    cursor: pointer
+    ;
+    outline: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border: none;
+    width: 150px;
+    height: 44px;
 }
 .footerLinks{
     font-size: 22px;

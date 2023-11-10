@@ -47,7 +47,7 @@ align-items: center;
     gap: 3rem;
     background-color: rgb(19,25,33);
 }
-.DeleteIcon {
+.DeleteIcon { 
     height: 30px;
     width: 30px;
     cursor: pointer;

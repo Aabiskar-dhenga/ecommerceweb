@@ -21,22 +21,22 @@ const Footer = () => {
             <h1 className="messageUsText ">Message us </h1>
             <input
               className="messageusInputBox"
-              placeholder="Name"
+              placeholder="Enter Your Name"
               type="text"
             />
             <input
               className="messageusInputBox"
-              placeholder="Email"
+              placeholder="Enter Your Email"
               type="text"
             />
             <input
               className="messageusInputBox"
-              placeholder="Subject"
+              placeholder=" Enter Your Subject"
               type="text"
             />
             <input
               className="messageusInputBox"
-              placeholder="Message"
+              placeholder=" Enter the Message"
               type="text"
             />
           </div>
