@@ -40,6 +40,7 @@ align-items: center;
 }
 .carditemRight{
     height: 90%;
+    padding-right: 2rem;
     width: 40%; 
     display: flex;
     align-items: center;
@@ -47,12 +48,14 @@ align-items: center;
     background-color: rgb(19,25,33);
 }
 .DeleteIcon {
-    height: 42px;
-    width: 43px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
 }
 .BookmarkIcon{
-    height: 29px;
-    width: 29px;
+    cursor: pointer;
+    height: 19px;
+    width: 19px;
 }
 .incrementBtn , .decrementBtn{
     height: 40px;
