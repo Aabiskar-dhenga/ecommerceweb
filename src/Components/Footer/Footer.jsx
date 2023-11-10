@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,10 +10,14 @@ const Footer = () => {
           <h1 className="categoryText">Category</h1>
           <div className="supportLinkWrappper">
             <ul className="supportLinks">
-              <li className="footerLinks">Home</li>
-              <li className="footerLinks">About us</li>
-              <li className="footerLinks"> All Products</li>
-              <li className="footerLinks">Cart </li>
+              <Link to="/" className="footerLinks">
+                Home
+              </Link>
+              <Link className="footerLinks">About us</Link>
+              <Link className="footerLinks"> All Products</Link>
+              <Link to="/cart" className="footerLinks">
+                Cart{" "}
+              </Link>
             </ul>
           </div>
         </div>
@@ -36,7 +41,7 @@ const Footer = () => {
             />
             <input
               className="messageusInputBox"
-              placeholder=" Enter the Message"
+              placeholder=" Enter theMessage"
               type="text"
             />
           </div>

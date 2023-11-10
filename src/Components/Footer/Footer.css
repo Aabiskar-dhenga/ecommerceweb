@@ -83,8 +83,14 @@
     width: 150px;
     height: 44px;
 }
+
+.supportLinks{
+    display: flex;
+    flex-direction: column;
+}
 .footerLinks{
     font-size: 22px;
+    cursor: pointer;
     list-style: none;
 }
 .supportLinkWrappper{
