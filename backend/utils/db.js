@@ -7,6 +7,6 @@ module.exports = async () => {
   } catch (error) {
     console.log(process.env.MONGO_URI);
 
-    console.log("error connecting to mongoDB");
+    console.log("error connecting to mongoDB", error);
   }
 };

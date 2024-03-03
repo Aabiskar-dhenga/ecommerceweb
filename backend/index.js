@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
+const swaggerUI = require("swagger-ui-express");
+const swaggerSpec = require("./swagger");
+
 app.use(express.json());
 require("dotenv").config();
 // console.log(process.env.MONGO_URI);
@@ -29,6 +32,7 @@ app.use(
     },
   })
 );
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
 app.use("/api/auth", require("./routes/authRoute"));
 app.use("/api/product", require("./routes/productRoute"));
